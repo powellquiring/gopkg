@@ -1,10 +1,10 @@
 package main
 
-
 import (
 	"fmt"
 	"os"
-        "github.com/powellquiring/gopkg/fun"
+
+	"github.com/powellquiring/gopkg/fun"
 )
 
 var version = "v1"
@@ -31,7 +31,7 @@ func Main(params map[string]interface{}) map[string]interface{} {
 	response["body"] = map[string]interface{}{
 		"params":  params,
 		"environ": os.Environ(),
-		"fun":     fun.funString(),
+		"fun":     fun.FunString(),
 	}
 
 	return response

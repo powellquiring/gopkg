@@ -1,5 +1,5 @@
 package fun
 
-func funString() string {
+func FunString() string {
 	return "fun-string"
 }
